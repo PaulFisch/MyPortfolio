@@ -112,3 +112,20 @@ body{
   font-size: 20px;
   color: #333;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav{
+    display: none;
+  }
+  .header_title {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .nav{
+    display: none;
+  }
+  .header_title {
+    font-size: 70px;
+  }
+}
