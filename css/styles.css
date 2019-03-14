@@ -46,21 +46,12 @@ body {
   height: 90%;
 }
 
-.header_wrapper {
-  /* position: absolute;
-  top: 40%;
-  left: 50%;
-
-  margin-right: -50%;
-
-  transform: translate(-50%, -50%); */
-}
-
 .header_title {
   margin: 0;
   padding: 0;
   text-align: center;
-  font: bolder 1000% Raleway, sans-serif;
+  font: bolder 150px Raleway, sans-serif;
+  color: #552;
 }
 
 .header_sub {
@@ -115,6 +106,7 @@ body {
   }
 
   .header_title {
-    font-size: 70px;
+    font-size: 65px;
+    font-weight: bold;
   }
 }
