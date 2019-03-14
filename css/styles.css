@@ -42,30 +42,31 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  height: 90%;
+  justify-content: space-around;
+  height: 40%;
+  padding-top: 50px;
+  background-color: #ddd;
 }
 
 .header_title {
-  margin: 0;
+  margin: -15px 0;
   padding: 0;
   text-align: center;
   font: bolder 150px Raleway, sans-serif;
-  color: #552;
+  color: #333;
 }
 
 .header_sub {
-  margin: .2px;
+  margin: 0 0;
   text-align: center;
   letter-spacing: 2;
-  font: 100 25px Raleway, sans-serif;
+  font: 100 40px Raleway, sans-serif;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5%;
 }
 
 .contact_method {
@@ -77,9 +78,9 @@ body {
 
 .contact_method_name {
   padding-right: 15px;
+  margin: 10px 0;
   color: green;
   font-family: Raleway, sans-serif;
-  font-weight: 200;
 }
 
 .contact_method_content {
