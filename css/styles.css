@@ -89,25 +89,54 @@ body {
   font: 600 20px Raleway, sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-height: 800px) {.header {height: 350px;}}
+
+@media only screen and (max-width: 940px) {
+
+  .header {
+    height: 300px;
+    padding-top: 10px;
+  }
+
+  .header_title {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
 
   .nav {
     display: none;
   }
 
+  .header {
+    height: 240px;
+    padding-top: 20px;
+  }
+
   .header_title {
-    font-size: 100px;
+    font-size: 60px;
+  }
+
+  .header_sub {
+    font-size: 30px;
+    padding-top: 10px;
   }
 }
 
 @media only screen and (max-width: 370px) {
 
-  .nav {
-    display: none;
+  .header {
+    height: 190px;
+    padding-top: 20px;
   }
 
   .header_title {
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
+  }
+
+  .header_sub {
+    font-size: 25px;
   }
 }
