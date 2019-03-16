@@ -1,66 +1,66 @@
 body {
+  height: 100%;
   position: absolute;
   width: 100%;
-  height: 100%;
 }
 
 .nav_outer {
-  display: flex;
   align-items: center;
+  background-color: rgb(189, 255, 189);
+  display: flex;
+  height: 10%;
   justify-content: space-between;
   width: 100%;
-  height: 10%;
-  background-color: rgb(189, 255, 189);
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
-  width: 30%;
   list-style: none;
+  width: 30%;
 }
 
 .nav_p {
-  padding-left: 15px;
-  letter-spacing: 1.4px;
   color: rgb(42, 42, 42);
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 1.4px;
+  padding-left: 15px;
 }
 
 .nav_a {
-  text-decoration: none;
-  letter-spacing: 1.25px;
   color: rgb(55, 55, 55);
   font-family: Raleway, sans-serif;
   font-size: 16px;
+  letter-spacing: 1.25px;
+  text-decoration: none;
 }
 
 .header {
-  position: relative;
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 40%;
-  padding-top: 50px;
   background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-around;
+  padding-top: 50px;
+  position: relative;
 }
 
 .header_title {
+  color: #333;
+  font: bolder 150px Raleway, sans-serif;
   margin: -15px 0;
   padding: 0;
   text-align: center;
-  font: bolder 150px Raleway, sans-serif;
-  color: #333;
 }
 
 .header_sub {
+  font: 100 40px Raleway, sans-serif;
+  letter-spacing: 2;
   margin: 0 0;
   text-align: center;
-  letter-spacing: 2;
-  font: 100 40px Raleway, sans-serif;
 }
 
 .contact {
@@ -70,29 +70,67 @@ body {
 }
 
 .contact_method {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .contact_method_name {
-  padding-right: 15px;
-  margin: 10px 0;
   color: green;
   font-family: Raleway, sans-serif;
+  margin: 10px 0;
+  padding-right: 15px;
 }
 
 .contact_method_content {
-  letter-spacing: 2;
   color: #333;
   font: 600 20px Raleway, sans-serif;
+  letter-spacing: 2;
 }
 
-@media only screen and (max-height: 800px) {.header {height: 350px;}}
+.curriculum_list {
+  list-style: none;
+  margin: 0;
+  padding-left: 40px;
+}
+
+.curriculum_list::before {
+  background-color: #5f5;
+  content: ' ';
+  height: 500px;
+  position: absolute;
+  width: 15px;
+}
+
+.curriculum_item::before {
+  background-color: #444;
+  border-radius: 50%;
+  content: ' ';
+  height: 30px;
+  left: 32.5px;
+  position: absolute;
+  width: 30px;
+}
+
+.curriculum_item {
+  align-items: center;
+  display: flex;
+  line-height: 0;
+  margin-left: 35px;
+}
+
+.curriculum_date {
+  margin-right: 20px;
+}
+
+@media only screen and (max-height: 800px) {
+  .header {
+    height: 350px;
+  }
+}
 
 @media only screen and (max-width: 940px) {
-
   .header {
     height: 300px;
     padding-top: 10px;
@@ -104,7 +142,6 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
-
   .nav {
     display: none;
   }
@@ -125,7 +162,6 @@ body {
 }
 
 @media only screen and (max-width: 370px) {
-
   .header {
     height: 190px;
     padding-top: 20px;
