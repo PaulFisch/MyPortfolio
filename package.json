@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal Portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulFisch/MyPortfolio.git"
+  },
+  "author": "Paul Fischill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulFisch/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/PaulFisch/MyPortfolio#readme"
+}
