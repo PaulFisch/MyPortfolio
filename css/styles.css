@@ -110,7 +110,7 @@ body {
 }
 
 .curriculum_item::before {
-  background-color: #ccc;
+  background-color: #ddd;
   border: 6px solid rgb(0, 87, 70);
   border-radius: 50%;
   box-sizing: border-box;
@@ -228,8 +228,16 @@ body {
     margin-bottom: 20px;
   }
 
+  .curriculum_list {
+    padding-left: 10px;
+  }
+
   .curriculum_list::before {
-    height: 500px;
+    display: none;
+  }
+
+  .curriculum_item::before {
+    display: none;
   }
 }
 
@@ -251,17 +259,5 @@ body {
   .curriculum_item {
     height: auto;
     margin-bottom: 10px;
-  }
-
-  .curriculum_list {
-    padding-left: 10px;
-  }
-
-  .curriculum_list::before {
-    display: none;
-  }
-
-  .curriculum_item::before {
-    display: none;
   }
 }
