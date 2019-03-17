@@ -177,6 +177,31 @@ body {
   .header_title {
     font-size: 90px;
   }
+
+  .curriculum_list {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .odd .curriculum_date,
+  .even .curriculum_date {
+    font-size: 15px;
+    left: 0;
+    margin-right: 12px;
+    position: relative;
+    text-align: left;
+  }
+
+  .odd .curriculum_content,
+  .even .curriculum_content {
+    font-size: 20px;
+    left: 0;
+    line-height: 30px;
+    max-width: none;
+    position: relative;
+    text-align: left;
+    transform: translateY(-1%);
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -191,11 +216,20 @@ body {
 
   .header_title {
     font-size: 60px;
+    line-height: 60px;
   }
 
   .header_sub {
     font-size: 30px;
     padding-top: 10px;
+  }
+
+  .curriculum_item {
+    margin-bottom: 20px;
+  }
+
+  .curriculum_list::before {
+    height: 500px;
   }
 }
 
@@ -212,5 +246,22 @@ body {
 
   .header_sub {
     font-size: 25px;
+  }
+
+  .curriculum_item {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .curriculum_list {
+    padding-left: 10px;
+  }
+
+  .curriculum_list::before {
+    display: none;
+  }
+
+  .curriculum_item::before {
+    display: none;
   }
 }
