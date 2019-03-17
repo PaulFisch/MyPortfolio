@@ -6,7 +6,7 @@ body {
 
 .nav_outer {
   align-items: center;
-  background-color: rgb(189, 255, 189);
+  background-color: rgb(0, 87, 70);
   display: flex;
   height: 10%;
   justify-content: space-between;
@@ -21,7 +21,7 @@ body {
 }
 
 .nav_p {
-  color: rgb(42, 42, 42);
+  color: #bbb;
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -30,7 +30,7 @@ body {
 }
 
 .nav_a {
-  color: rgb(55, 55, 55);
+  color: #bbb;
   font-family: Raleway, sans-serif;
   font-size: 16px;
   letter-spacing: 1.25px;
@@ -39,7 +39,7 @@ body {
 
 .header {
   align-items: center;
-  background-color: #ddd;
+  background-color: rgb(0, 87, 70);
   display: flex;
   flex-direction: column;
   height: 40%;
@@ -49,16 +49,20 @@ body {
 }
 
 .header_title {
-  color: #333;
-  font: bolder 150px Raleway, sans-serif;
+  color: white;
+  font: bolder 130px Heebo, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: -3px;
+  line-height: 140px;
   margin: -15px 0;
   padding: 0;
   text-align: center;
 }
 
 .header_sub {
+  color: #bbb;
   font: 100 40px Raleway, sans-serif;
-  letter-spacing: 2;
+  letter-spacing: -1px;
   margin: 0 0;
   text-align: center;
 }
@@ -77,14 +81,14 @@ body {
 }
 
 .contact_method_name {
-  color: green;
+  color: #888;
   font-family: Raleway, sans-serif;
   margin: 10px 0;
   padding-right: 15px;
 }
 
 .contact_method_content {
-  color: #333;
+  color: white;
   font: 600 20px Raleway, sans-serif;
   letter-spacing: 2;
 }
@@ -92,36 +96,70 @@ body {
 .curriculum_list {
   list-style: none;
   margin: 0;
-  padding-left: 40px;
+  padding-left: 50%;
 }
 
 .curriculum_list::before {
-  background-color: #5f5;
+  background-color: rgb(0, 87, 70);
   content: ' ';
-  height: 500px;
+  height: 400px;
+  min-height: 44.9%;
   position: absolute;
-  width: 15px;
+  transform: translateX(-50%);
+  width: 10px;
 }
 
 .curriculum_item::before {
-  background-color: #444;
+  background-color: #ccc;
+  border: 6px solid rgb(0, 87, 70);
   border-radius: 50%;
+  box-sizing: border-box;
   content: ' ';
   height: 30px;
-  left: 32.5px;
-  position: absolute;
-  width: 30px;
+  left: 0;
+  min-width: 30px;
+  position: relative;
+  right: 0;
+  transform: translateX(-50%);
 }
 
 .curriculum_item {
   align-items: center;
   display: flex;
-  line-height: 0;
-  margin-left: 35px;
+  height: 80px;
 }
 
 .curriculum_date {
-  margin-right: 20px;
+  color: #444;
+  font-family: 'VT232', monospace;
+  font-size: 20px;
+  position: absolute;
+}
+
+.curriculum_content {
+  color: #111;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  max-width: 40%;
+  position: absolute;
+}
+
+.odd .curriculum_date {
+  right: 52%;
+  text-align: right;
+}
+
+.odd .curriculum_content {
+  left: 52%;
+}
+
+.even .curriculum_date {
+  left: 52%;
+}
+
+.even .curriculum_content {
+  right: 52%;
+  text-align: right;
 }
 
 @media only screen and (max-height: 800px) {
