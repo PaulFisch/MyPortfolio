@@ -111,7 +111,7 @@ body {
 
 .curriculum_item::before {
   background-color: white;
-  border: 6px solid rgb(0, 87, 70);
+  border: 7px solid rgb(0, 87, 70);
   border-radius: 50%;
   box-sizing: border-box;
   content: ' ';
