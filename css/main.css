@@ -1,0 +1,141 @@
+.header {
+  align-items: center;
+  background-color: rgb(0, 87, 70);
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-around;
+  padding-top: 50px;
+  position: relative;
+}
+
+.header_title {
+  color: white;
+  font: bolder 130px Heebo, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: -3px;
+  line-height: 140px;
+  margin: -15px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header_sub {
+  color: #bbb;
+  font: 100 40px Raleway, sans-serif;
+  letter-spacing: -1px;
+  margin: 0 0;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_method {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact_method_name {
+  color: #888;
+  font-family: Raleway, sans-serif;
+  margin: 10px 0;
+  padding-right: 15px;
+}
+
+.contact_method_content {
+  color: white;
+  font: 600 20px Raleway, sans-serif;
+  letter-spacing: 2;
+}
+
+.curriculum_list {
+  list-style: none;
+  max-width: 90%;
+  padding: 0;
+  margin: auto;
+  margin-top: 20px;
+  min-height: 50%;
+}
+
+.curriculum_item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.curriculum_date {
+  color: #454545;
+  font-family: 'VT232', monospace;
+  font-size: 20px;
+  margin: 0;
+}
+
+.curriculum_content {
+  color: #111;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (max-height: 800px) {
+  .header {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .header {
+    height: 300px;
+    padding-top: 10px;
+  }
+
+  .header_title {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    height: 240px;
+    padding-top: 20px;
+  }
+
+  .header_title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .header_sub {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .header {
+    height: 190px;
+    padding-top: 20px;
+  }
+
+  .header_title {
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .header_sub {
+    font-size: 25px;
+  }
+}

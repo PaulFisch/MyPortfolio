@@ -1,0 +1,40 @@
+.privacy {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  padding-top: 20px;
+  font: 19px Raleway, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font: bolder 70px Heebo, sans-serif;
+  color: #222;
+}
+
+h2 {
+  text-align: left;
+  font: bolder 30px Heebo, sans-serif;
+  margin: 5px 0;
+  color: #333;
+}
+
+p {
+  margin: 12px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
