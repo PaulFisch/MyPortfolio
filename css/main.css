@@ -2,11 +2,15 @@
   align-items: center;
   background-color: rgb(0, 87, 70);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 40%;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 50px;
   position: relative;
+}
+
+.header_wrapper {
+  margin-right: 100px;
 }
 
 .header_title {
@@ -21,42 +25,28 @@
 }
 
 .header_sub {
-  color: #bbb;
-  font: 100 40px Raleway, sans-serif;
-  letter-spacing: -1px;
   margin: 0 0;
   text-align: center;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.header_portrait {
+  height: 100%;
 }
 
-.contact_method {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.header_portrait_wrapper {
+  height: 95%;
 }
 
-.contact_method_name {
-  color: #888;
-  font-family: Raleway, sans-serif;
-  margin: 10px 0;
-  padding-right: 15px;
-}
-
-.contact_method_content {
-  color: white;
-  font: 600 20px Raleway, sans-serif;
-  letter-spacing: 2;
+.header_sub--email {
+  color: #bbb;
+  font: 100 40px Raleway, sans-serif;
+  letter-spacing: -1px;
+  text-decoration: none;
 }
 
 .curriculum_list {
   list-style: none;
-  max-width: 90%;
+  max-width: 50%;
   padding: 0;
   margin: auto;
   margin-top: 20px;
@@ -64,7 +54,6 @@
 }
 
 .curriculum_item {
-  align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -73,8 +62,8 @@
 
 .curriculum_date {
   color: #454545;
-  font-family: 'VT232', monospace;
-  font-size: 20px;
+  font-family: "VT232", monospace;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -83,7 +72,9 @@
   font-family: Raleway, sans-serif;
   font-size: 25px;
   margin: 0;
-  text-align: center;
+  width: 100%;
+  padding: 5px;
+  background-color: #ccc;
 }
 
 @media only screen and (max-height: 800px) {
@@ -103,14 +94,20 @@
   }
 }
 
-@media only screen and (max-width: 540px) {
-  .nav {
-    display: none;
+@media only screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    height: 300px;
+    padding-top: 20px;
   }
 
-  .header {
-    height: 240px;
-    padding-top: 20px;
+  .header_wrapper {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    display: none;
   }
 
   .header_title {
@@ -122,12 +119,27 @@
     font-size: 30px;
     padding-top: 10px;
   }
+  .header_portrait_wrapper {
+    text-align: center;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .curriculum_list {
+    max-width: 95%;
+  }
 }
 
 @media only screen and (max-width: 370px) {
   .header {
-    height: 190px;
+    height: 220px;
     padding-top: 20px;
+  }
+
+  .header_portrait_wrapper {
+    height: 50%;
+    text-align: center;
   }
 
   .header_title {
