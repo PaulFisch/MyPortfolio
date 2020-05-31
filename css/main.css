@@ -30,11 +30,7 @@
 }
 
 .header_portrait {
-  height: 100%;
-}
-
-.header_portrait_wrapper {
-  height: 95%;
+  height: 20rem;
 }
 
 .header_sub--email {
@@ -92,6 +88,10 @@
   .header_title {
     font-size: 90px;
   }
+
+  .header_portrait {
+    height: 17rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -119,9 +119,13 @@
     font-size: 30px;
     padding-top: 10px;
   }
+
   .header_portrait_wrapper {
     text-align: center;
-    height: 60%;
+  }
+
+  .header_portrait {
+    height: 12rem;
   }
 }
 
@@ -133,7 +137,7 @@
 
 @media only screen and (max-width: 370px) {
   .header {
-    height: 220px;
+    height: 250px;
     padding-top: 20px;
   }
 
@@ -147,7 +151,11 @@
     font-weight: bold;
   }
 
-  .header_sub {
+  .header_sub--email {
     font-size: 25px;
+  }
+
+  .header_portrait {
+    height: 8rem;
   }
 }
